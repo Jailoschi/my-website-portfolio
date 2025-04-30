@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Your<span>Name</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <section class="blog-header">
+        <div class="container">
+            <h1>My Thoughts & Ideas</h1>
+            <p>Sharing my journey, insights, and random musings about technology and life.</p>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="blog-posts">
+        <div class="container">
+            <div class="posts-grid" id="posts-container">
+                <!-- Posts will be loaded here -->
+                <div class="post-card skeleton">
+                    <div class="post-image"></div>
+                    <div class="post-content">
+                        <h3 class="post-title">Loading...</h3>
+                        <p class="post-excerpt">Loading blog post...</p>
+                        <div class="post-meta">
+                            <span class="post-date">Loading date</span>
+                            <span class="post-read-time">2 min read</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- More skeleton cards can be added -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Editor (Visible only to you when logged in) -->
+    <section class="blog-editor" id="blog-editor">
+        <div class="container">
+            <h2>Create New Post</h2>
+            <form id="post-form">
+                <div class="form-group">
+                    <input type="text" id="post-title" required placeholder="Post Title">
+                </div>
+                <div class="form-group">
+                    <textarea id="post-content" required placeholder="Write your post here..."></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="post-image" placeholder="Image URL (optional)">
+                </div>
+                <button type="submit" class="btn">Publish Post</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="blog.js"></script>
+</body>
+</html>
